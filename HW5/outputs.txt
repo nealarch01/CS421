@@ -1,0 +1,11 @@
+Script started on Fri 25 Feb 2022 01:56:42 PM PST
+]0;archi009@empress:~/cs421/HW5[?1034h[archi009@empress HW5]$ g++ mat.cpp
+]0;archi009@empress:~/cs421/HW5[archi009@empress HW5]$ ./a.out
+Reading table from lines.txt...
+0 | m n o  | p q r  | - - -  | - - -  | 
+1 | - - -  | - - -  | s t u  | v w x  | 
+2 | - - -  | - - -  | - - -  | - - -  | 
+]0;archi009@empress:~/cs421/HW5[archi009@empress HW5]$ exit
+exit
+
+Script done on Fri 25 Feb 2022 01:57:00 PM PST

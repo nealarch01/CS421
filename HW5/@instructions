@@ -1,0 +1,20 @@
+Input file
+
+lines.txt
+------------
+
+Specifies the content of your table.
+
+each line has
+row col followed by characters to go into that entry in the table
+
+row is an integer  0, 1...
+col is a character m, n...  
+
+The number of characters per entry is always the same (i.e. VM).  
+
+Run mat.out to see what your output should look like.
+
+Feel free to change lines.txt to try different R, C and VM in mat.cpp
+
+

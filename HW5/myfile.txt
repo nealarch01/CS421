@@ -1,0 +1,72 @@
+Script started on Wed 29 Sep 2021 07:34:11 PM PDT
+]0;lkrell@empress:/cs/cs421LK/CS421Progs/HW2A_Matrix[?1034h[lkrell@empress HW2A_Matrix]$ ls
+@instructions  lines.txt  mat.cpp  [0m[01;32mmat.out[0m  ,myfile.txt  Test1.txt
+]0;lkrell@empress:/cs/cs421LK/CS421Progs/HW2A_Matrix[lkrell@empress HW2A_Matrix]$ more mat.cpp
+#include<iostream>
+#include<fstream>
+#include<vector>
+using namespace std;
+
+//--------------------------------------
+// CS421 File mat.cpp for HW2A Matrix Practice
+// Your name: **
+//--------------------------------------
+
+// the following can be changed and the rest of the code should work
+int const R = 3;  // number of rows
+int const C = 4;  // number of columns
+int const VM = 3; // table entry (vector) length
+
+vector<char>  T[R][C];  // 3 rows and 4 columns table for now 
+
+// ------------------ Functions --------------------------------
+
+int convert(char x)
+{ 
+  ** do a formula to convert m to 0, n to 1, o to 2 etc.
+} 
+[7m--More--(37%)[27m[K
+int readTable()
+{  int row, col;  // row and col numbers
+   char col_c;     // column indicator
+   ifstream fin ("lines.txt", ios::in);
+ 
+  // Read in the file into T
+   while (fin >> row) // next line of file
+     {
+       fin >> col_c; col = convert(col_c);  // convert to a slot number
+       vector<char> v;  // a vector to fill
+       char c; // one char from the file
+
+       // ** Fill v with chars from the file (there are VM chars)
+       // ** Put  v in T[row][col]
+     }//end of while
+}
+
+// Displays a vector or "---" if the vector is empty
+void showVector(vector<char> v)
+{ if (v.size() == 0)  // empty entry
+    for (int i = 1; i <= VM; i++) cout << "- ";
+  else
+[7m--More--(77%)[27m    // show the content of v separated by blanks (e.g. "m n o")
+}
+
+// Displays T as a table, separating entries with "|" 
+void displayTable()
+{
+  // ** display T nicely labeled with row numbers (col numbers not needed)
+  //    by calling showVector 
+}
+
+
+// Driver
+int main()
+{
+  cout << "Reading table from lines.txt..." << endl;
+  readTable(); 
+  displayTable();  
+}//the end
+]0;lkrell@empress:/cs/cs421LK/CS421Progs/HW2A_Matrix[lkrell@empress HW2A_Matrix]$  exit
+exit
+
+Script done on Wed 29 Sep 2021 07:34:20 PM PDT
