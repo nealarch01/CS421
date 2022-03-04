@@ -1,0 +1,35 @@
+~/Desktop/Spring2022/CS421/EmpressLocal/HW1B/HW1B_RecGen ❯ ./r.out
+Enter your string: a
+Yes, in language
+Enter your string: b
+Yes, in language
+Enter your string: aabba
+Yes, in language
+Enter your string: c
+No, not in language
+Enter your string: ac
+No, not in language
+Enter your string: db
+No, not in language
+Enter your string:
+No, not in language
+Enter your string:
+No, not in language
+Enter your string: abd
+No, not in language
+Enter your string: aba
+Yes, in language
+Enter your string: abac
+No, not in language
+Enter your string: bac
+No, not in language
+Enter your string: 123
+No, not in language
+Enter your string: 1
+No, not in language
+Enter your string: 2
+No, not in language
+Enter your string: 46
+No, not in language
+Enter your string: ^C
+~/Desktop/Spring2022/CS421/EmpressLocal/HW1B/HW1B_RecGen ❯
