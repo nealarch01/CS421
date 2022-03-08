@@ -1,0 +1,283 @@
+Script started on Wed 02 Mar 2022 09:57:02 AM PST
+]0;archi009@empress:~/cs421/HW6[?1034h[archi009@empress HW6]$ g++ fa.cpp
+]0;archi009@empress:~/cs421/HW6[archi009@empress HW6]$ ./a.out
+Enter the input file name:fain.txt
+
+.....Scanner was called...
+>>>>>Word is:cd_8c
+Trying the mytoken machine...
+current state: 0
+character: c
+current state: 1
+character: d
+current state: 2
+character: _
+I am stuck in state 2
+Trying ident token
+current state: 0
+character: c
+current state: 1
+character: d
+current state: 1
+character: _
+current state: 1
+character: 8
+current state: 1
+character: c
+>>>>>Type is:IDENT
+
+.....Scanner was called...
+>>>>>Word is:c_d_8_c
+Trying the mytoken machine...
+current state: 0
+character: c
+current state: 1
+character: _
+I am stuck in state 1
+Trying ident token
+current state: 0
+character: c
+current state: 1
+character: _
+current state: 1
+character: d
+current state: 1
+character: _
+current state: 1
+character: 8
+current state: 1
+character: _
+current state: 1
+character: c
+>>>>>Type is:IDENT
+
+.....Scanner was called...
+>>>>>Word is:.89
+Trying the mytoken machine...
+current state: 0
+character: .
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: .
+I am stuck in state 0
+Trying real token
+current state: 0
+character: .
+current state: 1
+character: 8
+current state: 2
+character: 9
+>>>>>Type is:REAL
+
+.....Scanner was called...
+>>>>>Word is:89.9
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: 9
+current state: 0
+character: .
+current state: 1
+character: 9
+>>>>>Type is:REAL
+
+.....Scanner was called...
+>>>>>Word is:89
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: 9
+Trying integer token
+current state: 0
+character: 8
+current state: 1
+character: 9
+>>>>>Type is:INT
+
+.....Scanner was called...
+>>>>>Word is:cd&e
+Trying the mytoken machine...
+current state: 0
+character: c
+current state: 1
+character: d
+current state: 2
+character: &
+I am stuck in state 2
+Trying ident token
+current state: 0
+character: c
+current state: 1
+character: d
+current state: 1
+character: &
+I am stuck in state 1
+Trying real token
+current state: 0
+character: c
+I am stuck in state 0
+Trying integer token
+current state: 0
+character: c
+I am stuck in state 0
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:89.6
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: 9
+current state: 0
+character: .
+current state: 1
+character: 6
+I am stuck in state 1
+Trying integer token
+current state: 0
+character: 8
+current state: 1
+character: 9
+current state: 1
+character: .
+I am stuck in state 1
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:8c9
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: c
+I am stuck in state 0
+Trying integer token
+current state: 0
+character: 8
+current state: 1
+character: c
+I am stuck in state 1
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:88..8
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: 8
+current state: 0
+character: .
+current state: 1
+character: .
+I am stuck in state 1
+Trying integer token
+current state: 0
+character: 8
+current state: 1
+character: 8
+current state: 1
+character: .
+I am stuck in state 1
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:89.
+Trying the mytoken machine...
+current state: 0
+character: 8
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: 8
+I am stuck in state 0
+Trying real token
+current state: 0
+character: 8
+current state: 0
+character: 9
+current state: 0
+character: .
+Trying integer token
+current state: 0
+character: 8
+current state: 1
+character: 9
+current state: 1
+character: .
+I am stuck in state 1
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:EOF
+Trying the mytoken machine...
+current state: 0
+character: E
+I am stuck in state 0
+Trying ident token
+current state: 0
+character: E
+I am stuck in state 0
+Trying real token
+current state: 0
+character: E
+I am stuck in state 0
+Trying integer token
+current state: 0
+character: E
+I am stuck in state 0
+>>>>>Lexical Error: The string is not in my language
+>>>>>End of File encountered
+]0;archi009@empress:~/cs421/HW6[archi009@empress HW6]$ exit
+exit
+
+Script done on Wed 02 Mar 2022 09:57:17 AM PST

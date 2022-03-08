@@ -1,0 +1,97 @@
+Script started on Fri 04 Mar 2022 10:21:57 AM PST
+]0;archi009@empress:~/cs421/HW6[?1034h[archi009@empress HW6]$ g++ td.cpp -o tds.out
+]0;archi009@empress:~/cs421/HW6[archi009@empress HW6]$ ./tds.out 
+This is a table driven scanner. Needs trs.txt and dfas.txt.
+States are 0 to 9 and chars are a to d
+Finished reading tables
+         a b c d
+State 0: 0 1     
+State 1:         
+State 2:     2 3 
+State 3:         
+State 4:         
+State 5:         
+State 6:         
+State 7:         
+State 8:         
+State 9:         
+token1: 0 1
+token2: 2 3
+.....done reading tables....
+@@Enter a string: ab
+Trying DFA: 0----------------------
+State: 0 Char: a
+New state: 0
+State: 0 Char: b
+New state: 1
+Found token: token1
+do control-C to quit
+@@Enter a string: abb
+Trying DFA: 0----------------------
+State: 0 Char: a
+New state: 0
+State: 0 Char: b
+New state: 1
+State: 1 Char: b
+New state: -1
+Trying DFA: 1----------------------
+State: 2 Char: a
+New state: -1
+Lexical error
+do control-C to quit
+@@Enter a string: aaab
+Trying DFA: 0----------------------
+State: 0 Char: a
+New state: 0
+State: 0 Char: a
+New state: 0
+State: 0 Char: a
+New state: 0
+State: 0 Char: b
+New state: 1
+Found token: token1
+do control-C to quit
+@@Enter a string: cd
+Trying DFA: 0----------------------
+State: 0 Char: c
+New state: -1
+Trying DFA: 1----------------------
+State: 2 Char: c
+New state: 2
+State: 2 Char: d
+New state: 3
+Found token: token2
+do control-C to quit
+@@Enter a string: cdd
+Trying DFA: 0----------------------
+State: 0 Char: c
+New state: -1
+Trying DFA: 1----------------------
+State: 2 Char: c
+New state: 2
+State: 2 Char: d
+New state: 3
+State: 3 Char: d
+New state: -1
+Lexical error
+do control-C to quit
+@@Enter a string: cccd
+Trying DFA: 0----------------------
+State: 0 Char: c
+New state: -1
+Trying DFA: 1----------------------
+State: 2 Char: c
+New state: 2
+State: 2 Char: c
+New state: 2
+State: 2 Char: c
+New state: 2
+State: 2 Char: d
+New state: 3
+Found token: token2
+do control-C to quit
+@@Enter a string: qu^C
+]0;archi009@empress:~/cs421/HW6[archi009@empress HW6]$ exit
+exit
+
+Script done on Fri 04 Mar 2022 10:22:48 AM PST
