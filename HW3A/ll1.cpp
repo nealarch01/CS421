@@ -157,13 +157,12 @@ int main() {
     cin >> ss;
 
     // ** push 'S' onto the stack to start
-    parseStack.push('S');  // S goes next
-    cout << "Stack:";
+    parseStack.push('S');  // S initializes
     // ** display the stack vertically from top to bottom
-    displayStack();
 
     int i = 0;               // index for ss
     while (ss[i] != '\0') {  // for each char of ss
+        displayStack();
         if (parseStack.empty()) {
             cout << "mismatch: stack is empty" << endl;
             return 0; // return early, no more to process since stack is empty
@@ -192,11 +191,12 @@ int main() {
             // match was successful
             cout << "match!" << endl;
         } else {
+            // we have encountered a mismatch
             cout << "mismatch" << endl;
+            return 0; // return early
         }
 
         // display the updated stack
-        displayStack();
         i++;
         // Based on ss[i] and
         //    the top of stack, update the stack:
@@ -211,6 +211,7 @@ int main() {
     }  // end of string
 
     // ** Here, check for success for failure based on stack empty or not
+    displayStack(); // printing the empty stack once more
     if (parseStack.empty()) {
         cout << "Accepted. String follows grammar rules" << endl;
     } else {
