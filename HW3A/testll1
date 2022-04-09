@@ -1,0 +1,215 @@
+Script started on Wed 04 Nov 2020 01:07:43 PM PST
+[lkrell@empress ~]$ ./ll1.out
+S:       2 A 2       3 A 3
+A:        2 2        3 3
+B:
+Enter a string made of 2's and/or 3's: 2332
+Stack
+S
+--------------------------
+current char is: 2
+Adding rhs of a rule to the stack
+
+Stack
+2
+A
+2
+--------------
+current char is 2
+match!
+
+Stack
+A
+2
+--------------------------
+current char is: 3
+Adding rhs of a rule to the stack
+
+Stack
+3
+3
+2
+--------------
+current char is 3
+match!
+
+Stack
+3
+2
+--------------------------
+current char is: 3
+match!
+
+Stack
+2
+--------------------------
+current char is: 2
+match!
+
+Stack
+[ Empty ]
+-----------------------
+Great work!!
+[lkrell@empress ~]$ ./ll1.out
+S:       2 A 2       3 A 3
+A:        2 2        3 3
+B:
+Enter a string made of 2's and/or 3's: 3223
+Stack
+S
+--------------------------
+current char is: 3
+Adding rhs of a rule to the stack
+
+Stack
+3
+A
+3
+--------------
+current char is 3
+match!
+
+Stack
+A
+3
+--------------------------
+current char is: 2
+Adding rhs of a rule to the stack
+
+Stack
+2
+2
+3
+--------------
+current char is 2
+match!
+
+Stack
+2
+3
+--------------------------
+current char is: 2
+match!
+
+Stack
+3
+--------------------------
+current char is: 3
+match!
+
+Stack
+[ Empty ]
+-----------------------
+Great work!!
+[lkrell@empress ~]$ ./ll1.out
+S:       2 A 2       3 A 3
+A:        2 2        3 3
+B:
+Enter a string made of 2's and/or 3's: 122
+Stack
+S
+--------------------------
+current char is: 1
+invalid value error
+[lkrell@empress ~]$ ./ll1.out
+S:       2 A 2       3 A 3
+A:        2 2        3 3
+B:
+Enter a string made of 2's and/or 3's: 2332222
+Stack
+S
+--------------------------
+current char is: 2
+Adding rhs of a rule to the stack
+
+Stack
+2
+A
+2
+--------------
+current char is 2
+match!
+
+Stack
+A
+2
+--------------------------
+current char is: 3
+Adding rhs of a rule to the stack
+
+Stack
+3
+3
+2
+--------------
+current char is 3
+match!
+
+Stack
+3
+2
+--------------------------
+current char is: 3
+match!
+
+Stack
+2
+--------------------------
+current char is: 2
+match!
+
+Stack
+[ Empty ]
+-----------------
+current char is 2
+ stack is empty
+[lkrell@empress ~]$ ./ll1.out
+S:       2 A 2       3 A 3
+A:        2 2        3 3
+B:
+Enter a string made of 2's and/or 3's: 2333
+Stack
+S
+--------------------------
+current char is: 2
+Adding rhs of a rule to the stack
+
+Stack
+2
+A
+2
+--------------
+current char is 2
+match!
+
+Stack
+A
+2
+--------------------------
+current char is: 3
+Adding rhs of a rule to the stack
+
+Stack
+3
+3
+2
+--------------
+current char is 3
+match!
+
+Stack
+3
+2
+--------------------------
+current char is: 3
+match!
+
+Stack
+2
+--------------------------
+current char is: 3
+mismatch
+]0;lkrell@empress:/cs/cs421LK/CS421Progs/HW3A_LL1[lkrell@empress HW3A_LL1]$ exit
+exit
+
+Script done on Wed 04 Nov 2020 01:08:06 PM PST
