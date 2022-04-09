@@ -162,6 +162,12 @@ int main() {
 
     int i = 0;               // index for ss
     while (ss[i] != '\0') {  // for each char of ss
+        string remainingInput = "";
+        for (string::size_type j = 0; j < ss.length(); j++) {
+            remainingInput += ss[j];
+        }
+        cout << "remaining input string: " << remainingInput << endl;
+        
         displayStack();
         if (parseStack.empty()) {
             cout << "mismatch: stack is empty" << endl;
