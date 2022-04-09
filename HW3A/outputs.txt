@@ -1,0 +1,192 @@
+Script started on Fri 08 Apr 2022 08:54:47 PM PDT
+]0;archi009@empress:~/cs421/HW3A[?1034h[archi009@empress HW3A]$ g++ ll1.cpp
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ ./a.out
+S| 2 A 2 3 A 3 
+A| 2 2 3 3 
+B| 
+Enter a string made of 2's and/or 3's: 2332
+Stack
+S
+----------------------
+current character is: 2
+Pushing rhs of a rule to the stack.
+Stack
+2
+A
+2
+----------------------
+current character is: 2
+match!
+Stack
+A
+2
+----------------------
+current character is: 3
+Pushing rhs of a rule to the stack.
+Stack
+3
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+2
+----------------------
+current character is: 2
+match!
+Stack
+[ Empty ]
+----------------------
+Accepted. String follows grammar rules
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ ./a.out
+S| 2 A 2 3 A 3 
+A| 2 2 3 3 
+B| 
+Enter a string made of 2's and/or 3's: 3223
+Stack
+S
+----------------------
+current character is: 3
+Pushing rhs of a rule to the stack.
+Stack
+3
+A
+3
+----------------------
+current character is: 3
+match!
+Stack
+A
+3
+----------------------
+current character is: 2
+Pushing rhs of a rule to the stack.
+Stack
+2
+2
+3
+----------------------
+current character is: 2
+match!
+Stack
+2
+3
+----------------------
+current character is: 2
+match!
+Stack
+3
+----------------------
+current character is: 3
+match!
+Stack
+[ Empty ]
+----------------------
+Accepted. String follows grammar rules
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ ./a.out
+S| 2 A 2 3 A 3 
+A| 2 2 3 3 
+B| 
+Enter a string made of 2's and/or 3's: 122
+Stack
+S
+----------------------
+current character is: 1
+Error: character in string is not part of grammar rules
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ ./a.out
+S| 2 A 2 3 A 3 
+A| 2 2 3 3 
+B| 
+Enter a string made of 2's and/or 3's: 2332222
+Stack
+S
+----------------------
+current character is: 2
+Pushing rhs of a rule to the stack.
+Stack
+2
+A
+2
+----------------------
+current character is: 2
+match!
+Stack
+A
+2
+----------------------
+current character is: 3
+Pushing rhs of a rule to the stack.
+Stack
+3
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+2
+----------------------
+current character is: 2
+match!
+Stack
+[ Empty ]
+----------------------
+mismatch: stack is empty
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ ./a.out
+S| 2 A 2 3 A 3 
+A| 2 2 3 3 
+B| 
+Enter a string made of 2's and/or 3's: 2333
+Stack
+S
+----------------------
+current character is: 2
+Pushing rhs of a rule to the stack.
+Stack
+2
+A
+2
+----------------------
+current character is: 2
+match!
+Stack
+A
+2
+----------------------
+current character is: 3
+Pushing rhs of a rule to the stack.
+Stack
+3
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+3
+2
+----------------------
+current character is: 3
+match!
+Stack
+2
+----------------------
+current character is: 3
+mismatch
+]0;archi009@empress:~/cs421/HW3A[archi009@empress HW3A]$ exit
+exit
+
+Script done on Fri 08 Apr 2022 08:55:48 PM PDT
